@@ -68,8 +68,8 @@ function PostDetail({ post }: PostDetailProps) {
         </div>
         <div className="mt-10">
           <PortableText
-            dataset={process.env.NEXT_PUBLIC_SANITY_DATASET!}
-            projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!}
+            dataset={process.env.NEXT_PUBLIC_SANITY_DATASET! as any}
+            projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID! as any}
             content={post.body}
             serializers={{
               h1: (props: any) => (

@@ -67,7 +67,7 @@ function PostDetail({ post }: PostDetailProps) {
           </p>
         </div>
         <div className="mt-10">
-          <PortableText
+          {/* <PortableText
             dataset={process.env.NEXT_PUBLIC_SANITY_DATASET! as any}
             projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID! as any}
             content={post.body}
@@ -87,7 +87,7 @@ function PostDetail({ post }: PostDetailProps) {
                 </a>
               ),
             }}
-          />
+          /> */}
         </div>
       </article>
       <hr className="max-w-lg my-5 mx-auto border border-yellow-500" />

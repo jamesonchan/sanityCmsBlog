@@ -19,7 +19,6 @@ interface PostDetailProps {
 
 function PostDetail({ post }: PostDetailProps) {
   const [submitted, setSubmitted] = useState(false);
-  console.log(post);
 
   const {
     register,
@@ -165,7 +164,7 @@ function PostDetail({ post }: PostDetailProps) {
       {/* Comments */}
       <div className="flex flex-col p-10 my-10 max-w-2xl mx-auto shadow-yellow-500 shadow">
         <h3 className="text-4xl">Comments</h3>
-        <hr className="pb-2"/>
+        <hr className="pb-2" />
         {post.comments.map((comment) => (
           <div key={comment._id}>
             <p>
